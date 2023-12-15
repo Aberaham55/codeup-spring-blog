@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <th:block th:replace="~{partials/partials :: head (title='Submit an Ad')}"></th:block>
+</head>
+<body>
+<header th:include="~{partials/partials :: header}"></header>
+<div th:each="ad : ${ads}">
+    <h2 th:text="${ad.title}"></h2>
+    <p th:text="${ad.description}"></p>
+</div>
+<!--<html xmlns:th="http://www.thymeleaf.org"  lang="en">-->
+<!--<head th:include="~{partials/partials.html :: head ('All Ads')}">-->
+<!--&lt;!&ndash;    <meta charset="UTF-8">&ndash;&gt;-->
+<!--&lt;!&ndash;    <title>All Ads</title>&ndash;&gt;-->
+<!--</head>-->
+<!--<body>-->
+<!--<header th:include="~{partials/partials :: header}"></header>-->
+<!--<div th:each="ad : ${ads}">-->
+<!--    <h2 th:text="${ad.title}"></h2>-->
+<!--    <p th:text="${ad.description}"></p>-->
+<!--</div>-->
+</body>
+</html>
+<!--<h1>AdLister Ads</h1>-->
+<!--<div th:each="ad : ${ads}">-->
+<!--    <h2 th:text="${ad.title}"></h2>-->
+<!--    <p th:text="${ad.description}"></p>-->
+<!--</div>-->
+
+<!--    <th:block th:replace="~{partials/partials :: head (title='All Posts')}"></th:block>-->
+<!--</head>-->
+
+<!--<body>-->
+
+<!--<nav th:replace="~{partials/partials :: navbar}">-->
+<!--</nav>-->
+
+<!--<h1>All Posts</h1>-->
+
+<!--<div th:if="${posts != null}">-->
+<!--    <h2 th:each="post : ${posts}"><a th:href="@{|/posts/${post.id}|}">[[${post.title}]]</a></h2>-->
+<!--</div>-->
+
+<!--<footer th:insert="~{partials/partials :: footer}" class="ads-page-footer ads-color-french-violet"></footer>-->
+
+<!--<th:block th:replace="~{partials/partials :: scripts}"></th:block>-->
+

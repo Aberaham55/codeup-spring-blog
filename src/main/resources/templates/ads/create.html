@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <th:block th:replace="partials/partials :: head (title='Submit an Ad')"></th:block>
+    <link rel="stylesheet" th:href="@{/css/createAds.css}">
+</head>
+<body>
+<h1>Submit an Ad</h1>
+<form action="/ads/create" method="post">
+    <label for="title">Title:</label>
+    <input type="text" name="title" id="title">
+    <label for="description">Description:</label>
+    <textarea name="description" id="description"></textarea>
+    <button>Submit</button>
+</form>
+<!--<html xmlns:th="http://www.thymeleaf.org" lang="en">-->
+<!--<head th:include="~{partials/partials :: head ('Submit an Ad')}">-->
+<!--&lt;!&ndash;    <meta charset="UTF-8">&ndash;&gt;-->
+<!--&lt;!&ndash;    <title>Submit an Ad</title>&ndash;&gt;-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Submit an Ad</h1>-->
+<!--<form action="/ads/create" method="post">-->
+<!--    <label for="title">Title:</label>-->
+<!--    <input type="text" name="title" id="title"><br>-->
+<!--    <label for="description">Description:</label>-->
+<!--    <textarea name="description" id="description"></textarea>-->
+<!--    <button>Submit</button>-->
+<!--</form>-->
+</body>
+</html>
+<!--    <th:block th:replace="~{partials/partials :: head (title='Submit an Ad')}"></th:block>-->
+<!--</head>-->
+
+<!--<body>-->
+
+<!--<nav th:replace="~{partials/partials :: navbar}">-->
+<!--</nav>-->
+
+<!--<header th:insert="~{partials/partials :: header (heading='Create Ad')}"></header>-->
+
+<!--<div class="container-fluid">-->
+
+<!--    <form action="/ads/create" method="post">-->
+<!--        <div>-->
+<!--            <label class="form-label" for="title">Title:</label>-->
+<!--            <input class="form-control" type="text" name="title" id="title"><br>-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <label class="form-label" for="description">Description:</label>-->
+<!--            <textarea class="form-control" name="description" id="description"></textarea>-->
+<!--        </div>-->
+
+<!--        <button class="mt-4 btn ads-color-verdigris">Submit</button>-->
+<!--    </form>-->
+<!--</div>-->
+
+<!--<footer th:insert="~{partials/partials :: footer}" class="ads-page-footer ads-color-french-violet"></footer>-->
+
+
